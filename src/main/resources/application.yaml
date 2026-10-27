@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: parking-admin
+  datasource:
+    url: jdbc:postgresql://localhost:5432/parking_dev
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      jdbc:
+        lob:
+          non-contextual-creation:true:
+    properties:
+      hibernate:
+        show-sql:true
+
